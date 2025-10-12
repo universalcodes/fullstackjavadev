@@ -10,7 +10,7 @@ public class APrintSimpleMessage {
         System.out.print("this is my laptop");
         System.out.print("Full Stack Roadmap");
         System.out.print("Every printed message comes in same line in the case of Print\n");
-        System.out.println("3rd  Type is PrintF - When you want to print more than 2 Variables of Java in the single line. we need to use special Comman Specifiers ");
+        System.out.println("3rd  Type is PrintF - When you want to print more than 2 Variables of Java in the single line. we need to use special Common Specifiers ");
 
         //         Common Specifiers:
         //        - %s → String
@@ -29,6 +29,16 @@ public class APrintSimpleMessage {
         System.out.printf("%n%c%n%c", a2, b2);
         String a3 = "Yogesh";
         String b3 = "Kamra";
-        System.out.printf("%n%s%n%s", a3, b3);
+        System.out.printf("%n%s%n%s\n", a3, b3);
+        System.out.println("Escape Sequences are listed: ");
+        // Code of Escape Sequences
+        System.out.println("Universal\nCodes");  // \n is used to write the code in the new line
+        System.out.println("Universal\tCodes");  // \t is used to write the code in the tab space
+        System.out.println("C:\\UniversalCodes");  //  \\ is used to  add the Backslash Code in the Message
+        System.out.println("This is:\"UniversalCodes\"");   // \"Test\"  is used to  add the Double Quote Code in the Message
+        System.out.println("This is:\'UniversalCodes\'");   // \'Test\' is used to  add the Single Quote Code in the Message
+        System.out.println("Thisis\rUniversalCodes");  // \r is used to delete words before \r
+        System.out.println("Thisiss\bUniversalCodess\b");  // \b  is used to delete last Character from the word.
+        System.out.println("Universal\fCodes\fof\fMyWorld");  // \f is used to write the code where one form feed is added
     }
 }
