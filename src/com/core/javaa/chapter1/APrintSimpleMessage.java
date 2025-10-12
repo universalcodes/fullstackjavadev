@@ -6,14 +6,14 @@ public class APrintSimpleMessage {
         System.out.println("First type is - println means when you want to print something new Lines");
         System.out.println("this is my laptop");
         System.out.println("Full Stack Roadmap");
-        System.out.println("2nd Type is Print = Every printed message comes in same line");
+        System.out.println("2nd Type is print = Every printed message comes in same line");
         System.out.print("this is my laptop");
         System.out.print("Full Stack Roadmap");
         System.out.print("Every printed message comes in same line in the case of Print\n");
-        System.out.println("3rd  Type is PrintF - When you want to print more than 2 Variables of Java in the single line. we need to use special Common Specifiers ");
+        System.out.println("3rd  Type is printf - When you want to print more than 2 Variables of Java in the single line. we need to use special Common Specifiers ");
 
         //         Common Specifiers:
-        //        - %s → String
+        //               - %s → String
 //                - %f → Floating-point number
 //                - %n → New line (platform-independent)
 //                - %c → Character
