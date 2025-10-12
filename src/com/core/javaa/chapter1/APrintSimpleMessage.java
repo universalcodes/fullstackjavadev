@@ -1,7 +1,4 @@
 package com.core.javaa.chapter1;
-
-import java.util.Arrays;
-
 public class APrintSimpleMessage {
 
     public static void main(String[] args) {
@@ -21,8 +18,6 @@ public class APrintSimpleMessage {
 //                - %n → New line (platform-independent)
 //                - %c → Character
 //                - %d → Number
-
-
         int a = 67;
         int b = 45;
         System.out.printf("%n%d%n%d", a, b);
@@ -35,8 +30,5 @@ public class APrintSimpleMessage {
         String a3 = "Yogesh";
         String b3 = "Kamra";
         System.out.printf("%n%s%n%s", a3, b3);
-
-
-
     }
 }
