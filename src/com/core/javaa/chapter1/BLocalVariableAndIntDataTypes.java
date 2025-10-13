@@ -1,5 +1,5 @@
 package com.core.javaa.chapter1;
-public class BVariablesAndDataTypes {
+public class BLocalVariableAndIntDataTypes {
 
     public static void main(String[] args) {
         System.out.println("Variables are used to store values based on their data type.");
