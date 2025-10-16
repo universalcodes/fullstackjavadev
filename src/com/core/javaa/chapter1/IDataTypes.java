@@ -132,7 +132,7 @@ public class IDataTypes {
         System.out.println(storeArrValueThirdWay[1]+"\n"); // As we haven't store the value of int array in index 1 then default value of int is displayed.
         // Note -  To Print all values of Arrays at once then loop is very useful.
 
-        System.out.println("10. Object Data Type");
+        System.out.println("11. Object Data Type");
         //Object dataType is Very is useful where it predicts the datatype automatically based on their value
         Object storeIntValueInObject = 1;
         Object storeDecimalValueInObject = 23.5;
