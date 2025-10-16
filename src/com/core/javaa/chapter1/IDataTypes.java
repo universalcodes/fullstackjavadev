@@ -16,11 +16,14 @@ public class IDataTypes {
 4. Non-Primitive Data Types include:
    - String  - It is used to store multiple characters at once
    - Array  - Arrays to store multiple values with Same datatype. Arrays usually starts from 0 Index
+              Run Time Error -1 Index don't exist in the array, it's throws ArrayIndexOutOfBoundsException
+              if User tries to display index which is not present in the array its throws ArrayIndexOutOfBoundsException
+              Arrays can store default value based on the datatype  if Array value is not defined
    - Object - Object is used to store any value & this is very useful especially in the case of array where user want to store different datatype & its value
 5. Each data type has a defined minimum and maximum value range.
 6. Some data types support **implicit (auto) typecasting**, meaning they automatically convert values from compatible types:
    - `int` can store values of `byte` and `short`
-   - `float` and `double` can store non decimal values, but output them in decimal format
+   - `float` and `double` can store non-decimal values, but output them in decimal format
    - `char` can store numeric values and return the corresponding ASCII character
    - `int` can store `char` values and return the ASCII code
    - boolean can store relational Operators based values but results always comes as boolean
@@ -125,8 +128,8 @@ public class IDataTypes {
         storeArrValueFourWay[0]= 78;   // Here we are Assigning values
         storeArrValueThirdWay[2] =67;
         System.out.println(storeArrValueFourWay[0]);
-        System.out.println(storeArrValueFourWay[1]);  // As we haven't the value of int array in index 1 then default value of int is displayed
-        System.out.println(storeArrValueThirdWay[1]+"\n"); // As we haven't the value of int array in index 1 then default value of int is displayed.
+        System.out.println(storeArrValueFourWay[1]);  // As we haven't store the value of int array in index 1 then default value of int is displayed
+        System.out.println(storeArrValueThirdWay[1]+"\n"); // As we haven't store the value of int array in index 1 then default value of int is displayed.
         // Note -  To Print all values of Arrays at once then loop is very useful.
 
         System.out.println("10. Object Data Type");
@@ -144,7 +147,7 @@ public class IDataTypes {
         System.out.println(storeBooleanInObject);
         System.out.println(storeStringInObject+"\n");
         Object storeArrValueInObject[]= {4, 23.51, 1324567233l,'B', false, "UniversalCodes"}; // Arrays to store multiple values with Same datatype. Arrays usually starts from 0 Index
-        System.out.println(storeArrValueInObject[0] + "\t"+ storeArrValueInObject[1] + "\t" + storeArrValueInObject[2] + "\t" + storeArrValueInObject[3]+ "\t" + storeArrValueInObject[4]+ "\t" + storeArrValueInObject[5]); // In following line output should be 4, 54, & 4
+        System.out.println(storeArrValueInObject[0] + "\t"+ storeArrValueInObject[1] + "\t" + storeArrValueInObject[2] + "\t" + storeArrValueInObject[3]+ "\t" + storeArrValueInObject[4]+ "\t" + storeArrValueInObject[5]); // In following line output should be 4, 23.51, 1324567233l,'B', false, "UniversalCodes"
 
     }
 }
