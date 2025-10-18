@@ -92,6 +92,19 @@ public class MVariableDataTypeConstantFeature {
         System.out.println("The Byte Value of Character\t"+charByteValue);
         System.out.println("The Bit Size of Character\t"+charSizeValue);
 
+        // Note -  // for better result of char min, max, byte & size we need to store in some numeric data type such as int, long, double & float.
+        // byte and short are applicable only for Byte & size as they store less size.
+
+        int charMaxValueViaInt =Character.MAX_VALUE;
+        long charMinValueViaLong =Character.MIN_VALUE;
+        float charByteValueViaFloat = Character.BYTES;
+        short charSizeValueViaShort = Character.SIZE;
+
+        System.out.println("The Max Value of Character in Numeric Format\t"+charMaxValueViaInt);
+        System.out.println("The Min Value of Character in Numeric Format\t"+charMinValueViaLong);
+        System.out.println("The Byte Value of Character in Numeric Format\t"+charByteValueViaFloat);
+        System.out.println("The Bit Size of Character in Numeric Format\t"+charSizeValueViaShort);
+
         //------------- Boolean Constants
         boolean booleanFalseVal =Boolean.FALSE;  // When user want to store Boolean Value as False
         boolean booleanTrueVal =Boolean.TRUE;   // When user want to store Boolean Value as True
@@ -164,11 +177,17 @@ public class MVariableDataTypeConstantFeature {
         int longSizeValueViaInt = Long.SIZE;
 
 
-         double byteMaxValueViaDouble =Integer.MAX_VALUE;  // Compile Time Error As Integer is smaller than long & Cant store Max Value of Long when int return type is Provided.
-        double byteMinValueViaDouble =Byte.MIN_VALUE; // Compile Time Error As Integer is smaller than long & Cant store Min Value of Long when int return type is Provided.
-        int byteByteValueViaDouble = Byte.BYTES;  // No Compile Time as int can store small values of long very easily.
-        int byteSizeValueViaDouble = Byte.SIZE;
+        // Note - Double can store min & max value of byte, short, int, long, float & double itself but results comes in decimal format.
 
+        double intMaxValueViaDouble = Integer.MAX_VALUE; // ✅ No error: int fits in double which Contains integer max value in decimal format
+        System.out.println("test int");
+        System.out.println(intMaxValueViaDouble); // Output: 2.147483647E9
+        double longMaxValueViaDouble = Long.MAX_VALUE; // ✅ No error: long fits in double which Contains long max value in decimal format
+        System.out.println("test Long");
+        System.out.println(longMaxValueViaDouble); //
+        double CharacterMaxValueViaDouble = Character.MAX_VALUE; // ✅ No error: char fits in double which Contains char max value in decimal format
+        System.out.println("test Character");
+        System.out.println(CharacterMaxValueViaDouble); //
 
 
 //        float DoubleMaxValueViaFloat =Double.MAX_VALUE;  // Compile Time Error As float is smaller than double & Cant store Max Value of Double when float return type is Provided.
