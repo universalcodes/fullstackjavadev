@@ -183,14 +183,5 @@ public class MVariableDataTypeConstantFeature {
         float DoubleByteValueViaFloat = Double.BYTES;  // No Compile Time as float can store value of double byte as the value is smaller
         float DoubleSizeValueViaFloat = Double.SIZE; // No Compile Time as float can store value of double size as the value is smaller
 
-
-
-
-
-
-
-
-
-
     }
 }
