@@ -97,18 +97,14 @@ public class MVariableDataTypeConstantFeature {
         boolean booleanTrueVal =Boolean.TRUE;   // When user want to store Boolean Value as True
        // boolean booleanTypeVal = Boolean.TYPE;
 
-        System.out.println("The Max Value of Boolean\t"+booleanFalseVal);
-        System.out.println("The Min Value of Boolean\t"+booleanTrueVal);
+        System.out.println("The  Value of Boolean\t"+booleanFalseVal);
+        System.out.println("The Value of Boolean\t"+booleanTrueVal);
         //System.out.println("The Byte Value of Boolean\t"+booleanType);
-
-
 
         //------------- String Constants
         String name = "universalcodes";
-        name = String.CASE_INSENSITIVE_ORDER.toString();
-        System.out.println("The Insensitive Value of String\t"+name);
-
-
+        System.out.println("Original String\t" + name);
+        System.out.println("CASE_INSENSITIVE_ORDER\t" + String.CASE_INSENSITIVE_ORDER);
 
 // As Long is number so we can display other datatype Number. It Don't throw any compile Time Error even though we are using long return datatype
 // No Compile Time Error as Byte is smallest datatype also  we can use other return type such as non-Decimal data type such as short, int, long & byte itself
@@ -121,7 +117,7 @@ public class MVariableDataTypeConstantFeature {
         // As Long is number so we can display other datatype Number. It Don't throw any compile Time Error even though we are using long return datatype
 // No Compile Time Error as Short is 2nd smallest datatype also we can use other return type such as non-Decimal data type such as int
 // Byte, int, long, float, double  can be used only for Bytes and Size as those values are smaller & easily Store able
-//
+
 //        byte shortMaxValueViabyte =Short.MAX_VALUE;  // Compile time Error in the case of Min & Max byte is smaller than short
 //        byte shortMinValueViabyte =Short.MIN_VALUE;   // Compile time Error in the case of Min & Max byte is smaller than short
         long shortMaxValueViaLong =Short.MAX_VALUE;
@@ -141,22 +137,19 @@ public class MVariableDataTypeConstantFeature {
         // In the Case of Double Min & Max Value only double itself applicable.
         // // byte, short, int, long & float can be used only for Bytes and Size as those values are smaller & easily Store able also double/float byte and size values are non-decimal
 
-
-
 //        long doubleMaxValueViaLong =Double.MAX_VALUE;  // Compile Type Error as Double Contains Decimal Value & Long Contains Non-Decimal Value.
 //        long doubleMinValueViaLong =Double.MIN_VALUE;  // Compile Type Error as Double Contains Decimal Value & Long Contains Non-Decimal Value.
         long doubleByteValueViaLong = Double.BYTES; // No Compile Time Error Double.BYTES Returns Non-Decimal Value
         long doubleSizeValueViaLong = Double.SIZE;  // No Compile Time Error Double.SIZE Returns Non- Decimal Value
 
 // In the Case of float Min & Max Value only float & Double itself applicable.
-        // // byte, short, int, long, float & double can be used only for Bytes and Size as those values are smaller & easily Store able also double/float byte and size values are non-decimal
+// byte, short, int, long, float & double can be used only for Bytes and Size as those values are smaller & easily Store able also double/float byte and size values are non-decimal
 
 
 //        long floatMaxValueViaLong =Float.MAX_VALUE;  // Compile Type Error as Float Contains Decimal Value & Long Contains Non-Decimal Value.
 //        long floatMinValueViaLong =Float.MIN_VALUE;  // Compile Type Error as Float Contains Decimal Value & Long Contains Non-Decimal Value.
         double floatMaxValueViaDouble =Float.MAX_VALUE;  // No Compile Type Error as Float Contains Decimal Value & Float is smaller than Double
         double floatMinValueViaDouble =Float.MIN_VALUE;  // No Compile Type Error as Float Contains Decimal Value & Float is smaller than Double
-
         long floatByteValueViaLong = Float.BYTES; // No Compile Time Error Float.BYTES Returns Non-Decimal Value
         long floatSizeValueViaLong = Float.SIZE;  // No Compile Time Error Float.SIZE Returns Non-Decimal Value
 
