@@ -93,8 +93,8 @@ public class MVariableDataTypeConstantFeature {
         System.out.println("The Bit Size of Character\t"+charSizeValue);
 
         //------------- Boolean Constants
-        boolean booleanFalseVal =Boolean.FALSE;
-        boolean booleanTrueVal =Boolean.TRUE;
+        boolean booleanFalseVal =Boolean.FALSE;  // When user want to store Boolean Value as False
+        boolean booleanTrueVal =Boolean.TRUE;   // When user want to store Boolean Value as True
        // boolean booleanTypeVal = Boolean.TYPE;
 
         System.out.println("The Max Value of Boolean\t"+booleanFalseVal);
